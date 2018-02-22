@@ -69,6 +69,6 @@ for i in rec_list:
 precision = calc_mean_auc(users_chosen_train, users_users_altered,
               [sparse.csr_matrix(user_vecs), sparse.csr_matrix(users_chosen_vecs.T)], users_chosen_test)
 
-
+print('Chosen users: ',chose_list, 'Recomended users: ', recomended_list)
 print(precision)
 
